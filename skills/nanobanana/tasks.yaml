@@ -1,0 +1,3 @@
+nanobanana:
+  description: Call Nano Banana API with a prompt
+  handler: handler.py

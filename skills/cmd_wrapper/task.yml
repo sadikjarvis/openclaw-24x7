@@ -1,0 +1,3 @@
+name: cmd_wrapper
+description: Run local command via Node
+pattern: "^Run command:\s*.*"

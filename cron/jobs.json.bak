@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "edd43f7d-1a21-4af8-ab25-29d9e9b14b86",
+      "agentId": "main",
+      "name": "DailyMovieNews",
+      "enabled": true,
+      "createdAtMs": 1770567580662,
+      "updatedAtMs": 1770807494399,
+      "schedule": {
+        "expr": "0 22 * * *",
+        "kind": "cron"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "run_movie_news",
+        "model": "ollama/gpt-oss:20b-cloud",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1770827400000,
+        "lastRunAtMs": 1770807452719,
+        "lastStatus": "ok",
+        "lastDurationMs": 41680,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "b35def44-d0d7-4ec7-a7b7-a5cca75359e8",
+      "agentId": "main",
+      "name": "UseNanobanana",
+      "enabled": true,
+      "createdAtMs": 1770570604383,
+      "updatedAtMs": 1770807536146,
+      "schedule": {
+        "anchorMs": 0,
+        "everyMs": 86400000,
+        "kind": "every"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Use nanobanana to summarize AI news today",
+        "model": "ollama/gpt-oss:20b-cloud",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1770854400000,
+        "lastRunAtMs": 1770807494406,
+        "lastStatus": "ok",
+        "lastDurationMs": 41740,
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

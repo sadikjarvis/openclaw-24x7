@@ -1,0 +1,3 @@
+name: powershell_exec
+description: Run a PowerShell command from chat
+pattern: "^Run command:\s*.*"

@@ -1,0 +1,3 @@
+dynamic_schedule:
+  description: Add a scheduled task through chat command
+  handler: handler.py

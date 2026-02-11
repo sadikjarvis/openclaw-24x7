@@ -1,0 +1,7 @@
+runScript:
+  description: Run a local shell command
+  parameters:
+    cmd:
+      type: string
+      description: Command to execute
+  handler: handler

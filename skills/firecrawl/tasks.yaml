@@ -1,0 +1,3 @@
+firecrawl:
+  description: "Search AI news with FireCrawl"
+  handler: firecrawl.py

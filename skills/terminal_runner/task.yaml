@@ -1,0 +1,8 @@
+name: terminal_runner
+description: Run safe terminal commands on the local machine
+inputs:
+  - command: string
+outputs:
+  - output: string
+task:
+  run: terminal_runner.py

@@ -1,0 +1,3 @@
+pixel:
+  description: "Draw text/ASCII diagrams from instructions"
+  handler: pixel.py
